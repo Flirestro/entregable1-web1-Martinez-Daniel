@@ -16,25 +16,25 @@ body {
 ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-#promos {
-  height: auto;
-  min-height: 28px;
-}
+.hero { text-align: center; color: white; padding: 32px 16px; }
+.hero h1 { font-size: 28px; margin-bottom: 10px; }
+.hero h2 { font-size: 20px; color: white; margin-bottom: 20px; }
+.hero p  { font-size: 1.1rem; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; }
 
-.promos {
-  font-size: 18px;
-}
 
-.fotoPromo {
-  width: 64px;
-}
+.texto-borde { color: #F1BE48; text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
+.texto-borde-azul { color: white; text-shadow: -1px -1px 0 #192953, 1px -1px 0 #192953, -1px 1px 0 #192953, 1px 1px 0 #192953; }
+.texto-borde-azul-amarillo { color: #F1BE48; text-shadow: -1px -1px 0 #192953, 1px -1px 0 #192953, -1px 1px 0 #192953, 1px 1px 0 #192953; }
+.subtexto { display: block; font-size: 14px; color: white; margin-top: 5px; }
 
+/*-------------------------------------- PROMOS --------------------------------------*/
 #promos {
   height: 7vh;
+  min-height: 28px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -58,16 +58,9 @@ ul {
   margin-left: 5px;
 }
 
-.logoHeader {
-  width: 140px;
-  height: auto;
-}
-
-.banderaheader {
-  width: 30px;
-  height: auto;
-  border-radius: 5px;
-}
+/*-------------------------------------- HEADER --------------------------------------*/
+.logoHeader { width: 140px; height: auto; }
+.banderaheader { width: 30px; height: auto; border-radius: 5px; }
 
 header {
   display: flex;
@@ -77,8 +70,8 @@ header {
   padding: 10px 15px;
   color: white;
   background: linear-gradient(to bottom, #192953ec, #0f172ae7);
+  width: 100%;
   height: auto;
-  width: auto;
 }
 
 #container-title {
@@ -90,60 +83,11 @@ header {
   width: 100%;
 }
 
-h1 {
-  margin-left: 10px;
-  font-size: 28px;
-}
+h1 { margin-left: 10px; font-size: 28px; }
 
-.hero {
-  text-align: center;
-  color: white;
-  padding: 32px 16px;
-}
 
-.hero h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  font-size: 20px;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.texto-borde {
-  color: #F1BE48;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-}
-
-.texto-borde-azul {
-  color: white;
-  text-shadow: -1px -1px 0 #192953, 1px -1px 0 #192953, -1px 1px 0 #192953, 1px 1px 0 #192953;
-}
-
-.texto-borde-azul-amarillo {
-  color: #F1BE48;
-  text-shadow: -1px -1px 0 #192953, 1px -1px 0 #192953, -1px 1px 0 #192953, 1px 1px 0 #192953;
-}
-
-.subtexto {
-  display: block;
-  font-size: 14px;
-  color: white;
-  margin-top: 5px;
-}
-
-.btn1 {
-  background-color: #0645d860;
-  color: white;
+/*-------------------------------------- BOTONES --------------------------------------*/
+.btn1, .btn2 {
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
@@ -151,24 +95,10 @@ h1 {
   font-weight: 600;
   cursor: pointer;
 }
+.btn1 { background-color: #0645d860; color: white; }
+.btn2 { background-color: #F1BE48;  color: white; }
 
-.btn2 {
-  background-color: #F1BE48;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
+/*-------------------------------------- SEPARADOR --------------------------------------*/
 .separador {
   width: 100%;
   display: grid;
@@ -181,6 +111,7 @@ ul {
   border-bottom: 1px solid white;
 }
 
+/*-------------------------------------- SECTION A --------------------------------------*/
 #sectionA {
   width: 100%;
   display: grid;
@@ -210,12 +141,12 @@ ul {
   border-radius: 18px;
 }
 
+/*-------------------------------------- KNOWLEDGES --------------------------------------*/
 #sectionNumbers {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   color: white;
-
 }
 
 .cuadro-numero {
@@ -234,21 +165,18 @@ ul {
   text-align: justify;
   padding: 16px;
   gap: 8px;
-
 }
 
-p2 {
-  
-  font-size: 20px;
-}
+p2 { font-size: 20px; }
 
+/*-------------------------------------- SKILLS --------------------------------------*/
 #sectionArticles {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.box-news2 {
+.box-news2, .box-news1 {
   width: 100%;
   display: grid;
   place-items: center;
@@ -256,35 +184,13 @@ p2 {
   height: auto;
   color: white;
   border: 1px solid white;
-  background: linear-gradient(to bottom, #0f172afa, #192953fb);
   text-align: left;
 }
+.box-news2 { background: linear-gradient(to bottom, #0f172afa, #192953fb); }
+.box-news1 { background: linear-gradient(to bottom, #686868fa, #4e4e4efb); }
 
-.box-news1 {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  padding: 2px;
-  height: auto;
-  color: white;
-  border: 1px solid white;
-  background: linear-gradient(to bottom, #686868fa, #4e4e4efb);
-  text-align: left;
-}
-
-.habilidad {
-  text-align: center;
-  margin: 20px auto;
-  width: 100%;
-  max-width: 500px;
-  font-size: 15px;
-}
-
-.Habilidad-nombre {
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: white;
-}
+.habilidad { text-align: center; margin: 20px auto; width: 100%; max-width: 500px; font-size: 15px; }
+.Habilidad-nombre { font-weight: bold; margin-bottom: 8px; color: white; }
 
 .barra {
   width: 90%;
@@ -295,7 +201,6 @@ p2 {
   overflow: hidden;
   position: relative;
 }
-
 .barra span {
   font-size: 12px;
   display: block;
@@ -311,12 +216,8 @@ p2 {
   box-sizing: border-box;
 }
 
-footer {
-  width: 100%;
-  height: auto;
-  color: white;
-  border-bottom: 1px solid white;
-}
+/* -------------------------------------- CONTACTO --------------------------------------*/
+footer { width: 100%; height: auto; color: white; border-bottom: 1px solid white; }
 
 #contact {
   width: 100%;
@@ -324,7 +225,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: #686868;
   color: white;
   text-align: center;
@@ -341,121 +241,47 @@ footer {
   color: white;
 }
 
-.contact h2 {
-  font-size: 20px;
-  color: white;
-}
+.contact h2 { font-size: 20px; color: white; }
+.contactfoto { width: 40px; height: 40px; border-radius: 8px; margin-left: 5px; }
 
-.contactfoto {
-  width: 0;
-  height: 0;
-  border-radius: 8px;
-  margin-left: 5px;
-}
+.cuadro-numero, .box-news1, .box-news2 { width: 100%; max-width: 100%; }
 
-.cuadro-numero,
-.box-news1,
-.box-news2 {
-  width: 100%;
-  max-width: 100%;
-}
 
 @media (min-width: 768px) {
-  header {
+  header { flex-direction: row; height: auto; }
+  .logoHeader { width: min(42vw, 240px); }
+  .banderaheader { width: 36px; }
 
-    flex-direction: row;
-    height: auto;
-  }
+  #sectionA { grid-template-columns: 1fr 1fr; padding: 0 20px; }
+  .fotoA { width: min(42vw, 360px); border-radius: 20px; box-shadow: 0 10px 28px black; }
 
-  .logoHeader {
-    width: min(42vw, 240px);
-  }
+  #sectionNumbers { grid-template-columns: 1fr 1fr; }
+  .cuadro-numero { padding: 16px; border-width: 1px; }
 
-  .banderaheader {
-    width: 36px;
-  }
+  #sectionArticles { grid-template-columns: 1fr 1fr; }
+  .box-news1, .box-news2 { height: 40vh; }
 
-  #sectionA {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 20px;
-  }
+  .separador { min-height: 10vh; font-size: 42px; }
 
-  .fotoA {
-    width: min(42vw, 360px);
-    border-radius: 20px;
-    box-shadow: 0 10px 28px black;
-  }
-
-  #sectionNumbers {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .cuadro-numero {
-    padding: 16px;
-    border-width: 1px;
-  }
-
-  #sectionArticles {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .box-news1,
-  .box-news2 {
-    height: 40vh;
-  }
-
-  .separador {
-    min-height: 10vh;
-    font-size: 42px;
-  }
-
-  .contactfoto {
-    width: 40px;
-    height: 40px;
-  }
+  .contactfoto { width: 40px; height: 40px; }
 }
 
 
 @media (min-width: 1200px) {
+  body { background-attachment: fixed; }
 
-  body {
-    background-attachment: fixed;
-  }
+  #promos { min-height: 56px; }
+  .promos { font-size: 30px; }
+  .fotoPromo { width: 110px; }
 
-  #promos {
-    min-height: 56px;
-  }
+  .logoHeader { width: 300px; }
+  .banderaheader { width: 40px; }
 
-  .promos {
-    font-size: 30px;
-  }
+  header { height: 20vh; }
 
-  .fotoPromo {
-    width: 110px;
-  }
+  #sectionA { grid-template-columns: repeat(2, 1fr); min-height: 90vh; height: auto; }
 
-  .logoHeader {
-    width: 300px;
-  }
-
-  .banderaheader {
-    width: 40px;
-  }
-
-  header {
-    height: 20vh;
-  }
-
-  #sectionA {
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 90vh;
-    height: auto;
-  }
-
-  .contenedorA {
-    justify-content: flex-end;
-    padding: 20px clamp(24px, 6vw, 200px);
-  }
+  .contenedorA { justify-content: flex-end; padding: 20px clamp(24px, 6vw, 200px); }
 
   .fotoA {
     width: clamp(220px, 28vw, 420px);
@@ -467,147 +293,47 @@ footer {
     margin-right: auto;
   }
 
-  #sectionNumbers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  #sectionNumbers { display: grid; grid-template-columns: 1fr 1fr; }
+  .box-news1, .box-news2 { height: 40vh; }
 
-  .box-news1,
-  .box-news2 {
-    height: 40vh;
-  }
+  .habilidad { width: 80%; font-size: 25px; max-width: 400px; }
+  .separador { font-size: 50px; }
 
-  .habilidad {
-    width: 80%;
-    font-size: 25px;
-    max-width: 400px;
-  }
+  .cuadro-numero { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 20px; max-width: 100%; }
 
-  .separador {
-    font-size: 50px;
-  }
-
-
-  .cuadro-numero {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    max-width: 100%;
-  }
-
-  #contact {
-    padding: 30px 20px;
-    gap: 20px;
-  }
-
-  .contenedorcontact {
-    gap: 25px;
-  }
-
-  .contactfoto {
-    width: 50px;
-    height: 50px;
-  }
+  #contact { padding: 30px 20px; gap: 20px; }
+  .contenedorcontact { gap: 25px; }
+  .contactfoto { width: 50px; height: 50px; }
 }
 
-
-
 @media (max-width: 568px) {
-  body {
-    font-size: 14px;
-    line-height: 1.4;
-  }
+  body { font-size: 14px; line-height: 1.4; }
 
-  header {
-    flex-direction: column;
-    padding: 8px 10px;
-    gap: 6px;
-  }
+  header { flex-direction: column; padding: 8px 10px; gap: 6px; }
+  .logoHeader { width: 120px; }
+  .banderaheader { width: 24px; }
 
-  .logoHeader {
-    width: 120px;
-  }
+  #promos { flex-direction: row; align-items: center; font-size: 14px; padding: 6px 12px; }
+  .promos { font-size: 16px; }
+  .fotoPromo { width: 48px; }
 
-  .banderaheader {
-    width: 24px;
-  }
+  h1 { font-size: 22px; }
 
-  #promos {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 14px;
-    padding: 6px;
-  }
+  .hero { padding: 20px 12px; }
+  .hero h1 { font-size: 22px; }
+  .hero h2 { font-size: 18px; }
+  .hero p  { font-size: 0.95rem; }
 
-  .promos {
-    font-size: 16px;
-  }
+  .separador { font-size: 26px; min-height: 6vh; }
 
-  .fotoPromo {
-    width: 48px;
-  }
+  #sectionA, #sectionNumbers, #sectionArticles { grid-template-columns: 1fr; padding: 8px; }
 
-  h1 {
-    font-size: 22px;
-  }
+  .habilidad { font-size: 14px; width: 100%; margin: 12px auto; }
 
-  .hero {
-    padding: 20px 12px;
-  }
+  .barra { height: 20px; }
+  .barra span { font-size: 14px; line-height: 20px; }
 
-  .hero h1 {
-    font-size: 22px;
-  }
-
-  .hero h2 {
-    font-size: 18px;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .separador {
-    font-size: 26px;
-    min-height: 6vh;
-  }
-
-  #sectionA,
-  #sectionNumbers,
-  #sectionArticles {
-    grid-template-columns: 1fr;
-    padding: 8px;
-  }
-
-
-  .habilidad {
-    font-size: 14px;
-    width: 100%;
-    margin: 12px auto;
-  }
-
-  .barra {
-    height: 20px;
-  }
-
-  .barra span {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  #contact {
-    padding: 16px 10px;
-    gap: 10px;
-  }
-
-  .contenedorcontact {
-    gap: 10px;
-  }
-
-  .contactfoto {
-    width: 32px;
-    height: 32px;
-  }
+  #contact { padding: 16px 10px; gap: 10px; }
+  .contenedorcontact { gap: 10px; }
+  .contactfoto { width: 32px; height: 32px; }
 }
